@@ -1,0 +1,108 @@
+/* General page styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header styling */
+header {
+    padding: 20px;
+    background-color: #ff0000;
+    color: white;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+}
+
+header input {
+    padding: 8px 12px;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+header button {
+    padding: 8px 12px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ffcc00;
+    font-weight: bold;
+}
+
+/* Pokédex grid */
+.pokedex {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Individual Pokémon card */
+.card {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.card img {
+    width: 120px;
+    height: 120px;
+}
+
+.card h3 {
+    margin: 10px 0 5px 0;
+    text-transform: capitalize;
+}
+
+.card p {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+/* Type badges */
+.type {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 10px;
+    color: white;
+    margin: 2px;
+    font-size: 0.8rem;
+}
+
+/* Type colors */
+.type.normal { background: #A8A77A; }
+.type.fire { background: #EE8130; }
+.type.water { background: #6390F0; }
+.type.electric { background: #F7D02C; }
+.type.grass { background: #7AC74C; }
+.type.ice { background: #96D9D6; }
+.type.fighting { background: #C22E28; }
+.type.poison { background: #A33EA1; }
+.type.ground { background: #E2BF65; }
+.type.flying { background: #A98FF3; }
+.type.psychic { background: #F95587; }
+.type.bug { background: #A6B91A; }
+.type.rock { background: #B6A136; }
+.type.ghost { background: #735797; }
+.type.dragon { background: #6F35FC; }
+.type.dark { background: #705746; }
+.type.steel { background: #B7B7CE; }
+.type.fairy { background: #D685AD; }
